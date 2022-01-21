@@ -24,6 +24,8 @@ import "@fontsource/roboto/700.css";
 
 //MUI - Button
 import Button from "@mui/material/Button";
+import Counterzustand from "./components/counterzustand";
+import Controls from "./components/counterzustand";
 
 // Style-Components bzw. Emotion
 const StyledApp = styled.div`
@@ -66,6 +68,7 @@ const App = () => {
 				<WindowTitle></WindowTitle>
 				<TextField></TextField>
 				<Counter>Hello</Counter>
+				<Counterzustand>Any bears in here</Counterzustand>
 				<DndContext onDragEnd={handleDragEnd}>
 					{!isDropped ? draggableMarkup : null}
 					<Droppable>{isDropped ? draggableMarkup : "Drop here"}</Droppable>
